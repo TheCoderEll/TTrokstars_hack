@@ -1,6 +1,5 @@
 function initilise_button(){
-	var opened = window.open("");
-	opened.document.write("<button onclick='ans()'>ANS</button>");
+	function () { var script = document.createElement('button'); script.innerHTML = "ANS"; script.onclick = "ans()"; document.body.appendChild(script);}();
 }
 function proc(){
 	initilise_button()
