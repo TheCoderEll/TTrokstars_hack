@@ -38,10 +38,11 @@ function getElementByXpath(path) {
 function initilise_button(){
 	var script = document.createElement('button');
 	script.innerHTML = "ANS";
-	script.attachEvent('onclick', 'ans()');
+	script.id = "ANS";
 	document.body.appendChild(script);
 }
 function proc(){
 	initilise_button();
 }
 proc();
+document.getElementById('ANS').addEventListener('click', ans());
