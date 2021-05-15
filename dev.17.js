@@ -44,8 +44,9 @@ function proc(){
 	script.innerHTML = "ANS";
 	script.id = "but";
 	document.body.appendChild(script);
-	console.log("READY");
-	document.getElementById('but').addEventListener('click', ans);
-
+	script.onload = function() {
+		console.log("READY");
+		document.getElementById('but').addEventListener('click', ans);
+	}
 }
 proc();
