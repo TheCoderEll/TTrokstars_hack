@@ -48,12 +48,7 @@ function proc(){
 	alert("C");
 	document.body.append(script);
 	alert("D");
-	script.onload = function() {
-		alert("READY");
-		document.getElementById('but').addEventListener('click', ans);
-	};
-	script.onerror = function() {
-  		alert("Error loading " + this.src); // Error loading https://example.com/404.js
-	};
+	alert("READY");
+	document.getElementById('but').addEventListener('click', ans);
 }
 proc();
