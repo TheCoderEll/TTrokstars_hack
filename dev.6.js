@@ -1,5 +1,5 @@
 function ans(){
-	q = document.getElementsByClassName("current").innerHTML;
+	q = document.getElementsByClassName("current")[0].innerHTML;
 	text = q.split(" ");
 	no1 = text[0];
 	op = text[1];
