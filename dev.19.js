@@ -41,9 +41,13 @@ function getElementByXpath(path) {
 }
 function proc(){
 	var script = document.createElement('button');
+	console.log("A");
 	script.innerHTML = "ANS";
+	console.log("B");
 	script.id = "but";
+	console.log("C");
 	document.body.append(script);
+	console.log("D");
 	script.onload = function() {
 		console.log("READY");
 		document.getElementById('but').addEventListener('click', ans);
