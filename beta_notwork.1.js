@@ -5,8 +5,8 @@ function ans(){
 	no1 = text[0];
 	op = text[1];
 	no2 = text[2];
-	console.log(no1);
-	console.log(no2);
+	alert(no1);
+	alert(no2);
 	answer = "";
 	if (op == "×") {
 		answer = no1 * no2
@@ -14,8 +14,9 @@ function ans(){
 	if (op == "÷") {
 		answer = no1 / no2
 	}
-	console.log(answer);
+	alert(answer);
 	nol = answer.split('');
+	alert(nol);
 	if (nol.length == 1){
 		simulateKeydown (no1[0].keycode, false, false, false);
 	}
