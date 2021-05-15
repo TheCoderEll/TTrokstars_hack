@@ -9,9 +9,9 @@ function ans(){
 		answer = no1 * no2
 	}
 	if (op == "÷") {
-		anser = no1 / no2
+		answer = no1 / no2
 	}
-	nol = anser.split('');
+	nol = answer.split('');
 	if (nol.length == 1){
 		simulateKeydown (no1[0].keycode, false, false, false);
 	}
