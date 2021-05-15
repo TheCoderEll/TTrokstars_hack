@@ -43,10 +43,13 @@ function proc(){
 	var script = document.createElement('button');
 	script.innerHTML = "ANS";
 	script.id = "but";
-	document.body.appendChild(script);
+	document.body.append(script);
 	script.onload = function() {
 		console.log("READY");
 		document.getElementById('but').addEventListener('click', ans);
-	}
+	};
+	script.onerror = function() {
+  		alert("Error loading " + this.src); // Error loading https://example.com/404.js
+	};
 }
 proc();
