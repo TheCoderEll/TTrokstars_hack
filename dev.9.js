@@ -45,4 +45,4 @@ function proc(){
 	initilise_button();
 }
 proc();
-document.getElementById('ANS').addEventListener('click', function (e) { ans(); ));
+document.getElementById('ANS').addEventListener('click', function (e) { ans(); });
