@@ -1,9 +1,12 @@
 function ans(){
+	console.log("WORK");
 	q = document.getElementsByClassName("current")[0].innerHTML;
 	text = q.split(" ");
 	no1 = text[0];
 	op = text[1];
 	no2 = text[2];
+	console.log(no1);
+	console.log(no2);
 	answer = "";
 	if (op == "×") {
 		answer = no1 * no2
@@ -11,6 +14,7 @@ function ans(){
 	if (op == "÷") {
 		answer = no1 / no2
 	}
+	console.log(answer);
 	nol = answer.split('');
 	if (nol.length == 1){
 		simulateKeydown (no1[0].keycode, false, false, false);
