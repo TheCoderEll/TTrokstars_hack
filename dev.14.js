@@ -42,11 +42,13 @@ function getElementByXpath(path) {
 function initilise_button(){
 	var script = document.createElement('button');
 	script.innerHTML = "ANS";
-	script.id = "ANS";
+	script.id = "but";
 	document.body.appendChild(script);
 }
 function proc(){
 	initilise_button();
+	console.log("READY");
+	document.getElementById('but').addEventListener('click', ans);
+
 }
 proc();
-document.getElementById('ANS').addEventListener('click', ans);
