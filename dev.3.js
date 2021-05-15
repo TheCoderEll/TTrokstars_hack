@@ -38,7 +38,7 @@ function getElementByXpath(path) {
 function initilise_button(){
 	var script = document.createElement('button');
 	script.innerHTML = "ANS";
-	script.onclick = "ans()";
+	script.attachEvent('onclick', 'ans()');
 	document.body.appendChild(script);
 }
 function proc(){
