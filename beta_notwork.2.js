@@ -2,9 +2,9 @@ function ans(){
 	console.log("WORK");
 	q = document.getElementsByClassName("current")[0].innerHTML;
 	text = q.split(" ");
-	no1 = text[0];
-	op = text[1];
-	no2 = text[2];
+	no1 = text[1];
+	op = text[2].split("<!---->")[1];
+	no2 = text[3];
 	alert(no1);
 	alert(no2);
 	answer = "";
