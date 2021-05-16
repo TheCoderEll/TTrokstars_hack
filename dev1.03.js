@@ -3,8 +3,8 @@ function ans(){
 	q = document.getElementsByClassName("current")[0].innerHTML;
 	text = q.split(" ");
 	no1 = text[1];
-	op = text[2].split("<!---->")[1];
-	no2 = text[3];
+	op = text[3].split("<!---->")[1];
+	no2 = text[5];
 	alert(no1);
 	alert(no2);
 	answer = "";
