@@ -10,10 +10,10 @@ function ans(){
 	alert(no2);
 	answer = "";
 	if (op == "×") {
-		answer = no1 * no2
+		answer = parseInt(no1) * parseInt(no2)
 	}
 	if (op == "÷") {
-		answer = no1 / no2
+		answer = parseInt(no1) / parseInt(no2)
 	}
 	alert(answer);
 	nol = answer.split('');
