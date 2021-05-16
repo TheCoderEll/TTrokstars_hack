@@ -4,7 +4,7 @@ function ans(){
 	text = q.split(" ");
 	alert(text);
 	no1 = text[1];
-	op = text[3].split("<!---->")[1];
+	op = text[2].split("<!---->")[1];
 	no2 = text[4];
 	alert(no1);
 	alert(op);
