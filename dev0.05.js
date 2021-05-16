@@ -7,6 +7,7 @@ function ans(){
 	op = text[3].split("<!---->")[1];
 	no2 = text[4];
 	alert(no1);
+	alert(op);
 	alert(no2);
 	answer = "";
 	if (op == "×") {
