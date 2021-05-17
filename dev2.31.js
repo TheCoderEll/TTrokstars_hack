@@ -2,8 +2,6 @@ function ans(){
 	console.log("WORK");
 	q = document.getElementsByClassName("current")[0].innerHTML;
 	text = q.split(" ");
-	alert(text.length);
-	alert(text);
 	alert(text[0]);
 	alert(text[1]);
 	alert(text[2]);
