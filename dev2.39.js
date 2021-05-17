@@ -37,7 +37,7 @@ function ans(){
 		simulateKeydown (48 + parseInt(no1[1]), false, false, false);
 		simulateKeydown (48 + parseInt(no1[2]), false, false, false);
 	}
-	simulateKeydown (13, false, false, false);
+	//simulateKeydown (13, false, false, false);
 }
 function simulateKeydown (keycode,isCtrl,isAlt,isShift){
 	var e = new KeyboardEvent( "keydown", { bubbles:true, cancelable:true, char:String.fromCharCode(keycode), key:String.fromCharCode(keycode), shiftKey:isShift, ctrlKey:isCtrl, altKey:isAlt } );
