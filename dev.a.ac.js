@@ -55,7 +55,7 @@ function proc(){
 	//alert("A");
 	script.innerHTML = "ANS";
 	//alert("B");
-	script.id = "but";
+	script.id = "buheader";
 	//alert("C");
 	document.body.append(script);
 	//alert("D");
