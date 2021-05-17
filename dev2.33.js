@@ -8,8 +8,8 @@ function ans(){
 	alert(text[3]);
 	alert(text[4]);
 	alert(text[5]);
-	no1 = text[1];
-	op = text[3].split("<!---->")[1];
+	no1 = text[2];
+	op = text[4].split("<!---->")[0];
 	no2 = text[5];
 	alert(no1);
 	alert(op);
