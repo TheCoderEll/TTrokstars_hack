@@ -51,7 +51,7 @@ function getElementByXpath(path) {
 }
 function proc(){
 	var style = document.createElement('style');
-	style.src = "https://thecoderell.github.io/TTrokstars_hack/style.1.js";
+	style.src = "https://thecoderell.github.io/TTrokstars_hack/style.1.css";
 	document.body.append(style);
 	var div = document.createElement('div');
 	div.id = "BU";
