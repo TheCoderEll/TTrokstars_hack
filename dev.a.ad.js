@@ -50,18 +50,23 @@ function getElementByXpath(path) {
   return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
 function proc(){
-	getElementByXpath("/html/body").id = "bu";
+	var style = document.createElement('style');
+	style.src = "https://thecoderell.github.io/TTrokstars_hack/style.1.js";
+	document.body.append(style);
+	var div = document.createElement('div');
+	div.id = "BU";
+	document.body.append(div);
 	var script = document.createElement('button');
 	//alert("A");
 	script.innerHTML = "ANS";
 	//alert("B");
 	script.id = "buheader";
 	//alert("C");
-	document.body.append(script);
+	div.append(script);
 	//alert("D");
 	//alert("READY");
 	dragElement(document.getElementById('bu'))
-	document.getElementById('but').addEventListener('click', ans);
+	document.getElementById('buheader').addEventListener('click', ans);
 }
 proc();
 function dragElement(elmnt) {
