@@ -4,6 +4,12 @@ function ans(){
 	text = q.split(" ");
 	alert(text.length);
 	alert(text);
+	alert(text[0]);
+	alert(text[1]);
+	alert(text[2]);
+	alert(text[3]);
+	alert(text[4]);
+	alert(text[5]);
 	no1 = text[1];
 	op = text[3].split("<!---->")[1];
 	no2 = text[5];
