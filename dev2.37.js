@@ -1,16 +1,16 @@
 function ans(){
-	console.log("WORK");
+	//console.log("WORK");
 	q = document.getElementsByClassName("current")[0].innerHTML;
 	text = q.split(" ");
-	alert(text[0]);
-	alert(text[1]);
-	alert(text[2]);
-	alert(text[3]);
-	alert(text[4]);
-	alert(text[5]);
-	no1 = text[2];
-	op = text[4].split("<!---->")[0];
-	no2 = text[5];
+	//alert(text[0]);
+	//alert(text[1]);
+	//alert(text[2]);
+	//alert(text[3]);
+	//alert(text[4]);
+	//alert(text[5]);
+	no1 = text[1];
+	op = text[3].split("<!---->")[0];
+	no2 = text[4];
 	alert(no1);
 	alert(op);
 	alert(no2);
@@ -50,14 +50,14 @@ function getElementByXpath(path) {
 }
 function proc(){
 	var script = document.createElement('button');
-	alert("A");
+	//alert("A");
 	script.innerHTML = "ANS";
-	alert("B");
+	//alert("B");
 	script.id = "but";
-	alert("C");
+	//alert("C");
 	document.body.append(script);
-	alert("D");
-	alert("READY");
+	//alert("D");
+	//alert("READY");
 	document.getElementById('but').addEventListener('click', ans);
 }
 proc();
