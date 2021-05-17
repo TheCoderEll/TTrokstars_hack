@@ -26,16 +26,16 @@ function ans(){
 	nol = answer.split('');
 	alert(nol);
 	if (nol.length == 1){
-		simulateKeydown (no1[0].keycode, false, false, false);
+		simulateKeydown (48 + parseInt(no1[0]), false, false, false);
 	}
 	if (nol.length == 2){
-		simulateKeydown (no1[0].keycode, false, false, false);
-		simulateKeydown (no1[1].keycode, false, false, false);
+		simulateKeydown (48 + parseInt(no1[0]), false, false, false);
+		simulateKeydown (48 + parseInt(no1[1]), false, false, false);
 	}
 	if (nol.length == 3){
-		simulateKeydown (no1[0].keycode, false, false, false);
-		simulateKeydown (no1[1].keycode, false, false, false);
-		simulateKeydown (no1[2].keycode, false, false, false);
+		simulateKeydown (48 + parseInt(no1[0]), false, false, false);
+		simulateKeydown (48 + parseInt(no1[1]), false, false, false);
+		simulateKeydown (48 + parseInt(no1[2]), false, false, false);
 	}
 	simulateKeydown (13, false, false, false);
 }
