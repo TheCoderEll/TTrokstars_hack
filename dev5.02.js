@@ -25,6 +25,7 @@ function ans(){
 	alert(answer);
 	nol = answer.split('');
 	alert(nol);
+	alert(nol.length);
 	if (nol.length == 1){
 		simulateKeydown (48 + parseInt(no1[0]), false, false, false);
 	}
