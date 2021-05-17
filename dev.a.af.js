@@ -54,7 +54,7 @@ function proc(){
 	style.src = "https://thecoderell.github.io/TTrokstars_hack/style.1.css";
 	document.body.append(style);
 	var div = document.createElement('div');
-	div.id = "BU";
+	div.id = "bu";
 	document.body.append(div);
 	var script = document.createElement('button');
 	//alert("A");
