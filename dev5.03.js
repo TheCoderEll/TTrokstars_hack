@@ -27,16 +27,16 @@ function ans(){
 	alert(nol);
 	alert(nol.length);
 	if (nol.length == 1){
-		simulateKeydown (48 + parseInt(no1[0]), false, false, false);
+		simulateKeydown (48 + parseInt(nol[0]), false, false, false);
 	}
 	if (nol.length == 2){
-		simulateKeydown (48 + parseInt(no1[0]), false, false, false);
-		simulateKeydown (48 + parseInt(no1[1]), false, false, false);
+		simulateKeydown (48 + parseInt(nol[0]), false, false, false);
+		simulateKeydown (48 + parseInt(nol[1]), false, false, false);
 	}
 	if (nol.length == 3){
-		simulateKeydown (48 + parseInt(no1[0]), false, false, false);
-		simulateKeydown (48 + parseInt(no1[1]), false, false, false);
-		simulateKeydown (48 + parseInt(no1[2]), false, false, false);
+		simulateKeydown (48 + parseInt(nol[0]), false, false, false);
+		simulateKeydown (48 + parseInt(nol[1]), false, false, false);
+		simulateKeydown (48 + parseInt(nol[2]), false, false, false);
 	}
 	//simulateKeydown (13, false, false, false);
 }
