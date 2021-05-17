@@ -50,6 +50,7 @@ function getElementByXpath(path) {
   return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
 function proc(){
+	getElementByXpath("/html/body").id = "bu";
 	var script = document.createElement('button');
 	//alert("A");
 	script.innerHTML = "ANS";
@@ -59,7 +60,7 @@ function proc(){
 	document.body.append(script);
 	//alert("D");
 	//alert("READY");
-	dragElement(document.getElementById('but'))
+	dragElement(document.getElementById('bu'))
 	document.getElementById('but').addEventListener('click', ans);
 }
 proc();
