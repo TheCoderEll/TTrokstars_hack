@@ -61,7 +61,7 @@ function proc(){
 	document.body.append(style);
 	var div = document.createElement('div');
 	div.id = "bu";
-	document.document.getElementsByClassName("game")[0].append(div);
+	document.getElementsByClassName("game")[0].append(div);
 	var script = document.createElement('button');
 	//alert("A");
 	script.innerHTML = "ANS";
