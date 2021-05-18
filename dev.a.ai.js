@@ -10,16 +10,16 @@ function ans(){
 	//alert(text[5]);
 	if (q.includes("÷")) {
 		no1 = text[1];
-		op = text[2];
+		op = text[2].split("<!---->")[1];
 		no2 = text[3];
 	} else {
 		no1 = text[1];
 		op = text[3].split("<!---->")[0];
 		no2 = text[4];
 	}
-	alert(no1);
-	alert(op);
-	alert(no2);
+	//alert(no1);
+	//alert(op);
+	//alert(no2);
 	answer = "";
 	if (op == "×") {
 		answer = parseInt(no1) * parseInt(no2);
