@@ -2,18 +2,24 @@ function ans(){
 	//console.log("WORK");
 	q = document.getElementsByClassName("current")[0].innerHTML;
 	text = q.split(" ");
-	alert(text[0]);
-	alert(text[1]);
-	alert(text[2]);
-	alert(text[3]);
-	alert(text[4]);
-	alert(text[5]);
-	no1 = text[1];
-	op = text[3].split("<!---->")[0];
-	no2 = text[4];
-	//alert(no1);
-	//alert(op);
-	//alert(no2);
+	//alert(text[0]);
+	//alert(text[1]);
+	//alert(text[2]);
+	//alert(text[3]);
+	//alert(text[4]);
+	//alert(text[5]);
+	if (q.includes("÷")) {
+		no1 = text[1];
+		op = text[2];
+		no2 = text[3];
+	} else {
+		no1 = text[1];
+		op = text[3].split("<!---->")[0];
+		no2 = text[4];
+	}
+	alert(no1);
+	alert(op);
+	alert(no2);
 	answer = "";
 	if (op == "×") {
 		answer = parseInt(no1) * parseInt(no2);
