@@ -56,9 +56,9 @@ function getElementByXpath(path) {
   return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
 function proc(){
-	var style = document.createElement('style');
-	style.src = "https://thecoderell.github.io/TTrokstars_hack/style.1.css";
-	document.body.append(style);
+	var script = document.createElement('link');
+	script.href="https://thecoderell.github.io/TTrokstars_hack/style.1.css";
+	document.body.appendChild(script);
 	var div = document.createElement('div');
 	div.id = "bu";
 	document.getElementsByClassName("game")[0].append(div);
